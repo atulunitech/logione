@@ -1,0 +1,395 @@
+<div class="dashboard_wrop" >  
+  <div fxLayout="row" fxLayoutAlign="space-between end">
+    <div fxLayout="row">
+        <div class="text-50 discrip_wrip">
+            
+            <div class="duscript_sub">HELLO ATUL
+                
+            </div>
+            <div fxLayout="" fxLayoutAlign="start center">
+              <div  class="discrip_titl">you hit the target of 92.1%  
+              
+                Carbon Emission: 1,146LBS • </div>
+                <div class="creat_bt" style="margin-left: 10px;margin-right: 10px;">
+                  <button mat-flat-button color="primary" style="padding-left: 15px !important;padding-right: 15px !important;">View Report</button>
+                  
+              </div>
+              <div  class="discrip_titl">Carbon Emission: <span style="color: #27C641; margin-right: 5px;font-weight: 500;">1,146LBS •</span>  </div>
+              <div  class="discrip_titl">Power Consumption: 2763mw</div>
+            </div>
+            
+          
+        </div>
+       
+
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="end end" >
+       
+        <div class="cust_input_datepick">
+            <mat-form-field appearance="fill">
+                <mat-label>Start date - End date</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                    <input matStartDate placeholder="Start date">
+                    <input matEndDate placeholder="End date">
+                </mat-date-range-input>
+                <!-- <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>       -->
+                <mat-datepicker-toggle [disableRipple]="true" matSuffix [for]="picker">
+                    <div matDatepickerToggleIcon><img src="../../../assets/images/calendar_icon.png" width="20px">
+                    </div>
+                </mat-datepicker-toggle>
+
+                <mat-date-range-picker #picker></mat-date-range-picker>
+            </mat-form-field>
+        </div>
+
+       
+
+        
+    </div>
+</div>
+<!-- <div  class="table_wrap" fxLayout="row" fxLayoutAlign="space-between top" >
+  <div fxFlex="100">
+    <img src="../../../assets/images/dummy1.png" alt="" style="width:100%">
+  </div>
+ 
+   
+      
+      
+</div> -->
+
+<!-- start -->
+<div  fxLayout="row wrap"   fxLayoutAlign="start top"    style="margin-top: 10px;margin-left: -10px;
+margin-right: -10px;">
+  <div fxLayout="column" fxLayoutAlign="space-between center"   fxFlex="70">
+    <div style="width: 100%;">
+      <div fxFlex="38">
+        <div fxFlex=""   class="dash_card" >
+          <div class="dash_card_tit">Need Your Attention Here!</div>
+          <div class="card_in_box" fxLayout="row" fxLayoutAlign="space-between none" > 
+           <div class="card_dis" fxLayout="column" fxLayoutAlign="space-between none" >
+            <div class="count_num">1/6</div>
+            <div class="cont_inn_tx">
+              <h2>Winner Of</h2>
+              <p>‘CII SUPPLY CHAIN & <br>LOGISTICS EXCELLENCE <br>(SCALE)’</p>
+              <h4>AWARD IN THE 3PL CATEGORY IN 2020,<br> 2019, 2018, 2017</h4>
+            </div>
+            <div class="cont_foot_tx" fxLayout="row" fxLayoutAlign="space-between center" >
+             <div></div>
+             <div class="view_cont">View Fill Story <img src="../../../assets/images/Icon feather-arrow-left.png"></div>
+            </div>
+           </div>
+          </div>
+          </div>
+          </div>
+          <div fxFlex="28"   class="dash_card" >
+            <div class="dash_card_tit">Expenses</div>
+            <div fxLayout="column" fxLayoutAlign="space-between stretch"  class="card_in_box" style="border:0;background-color: transparent;"> 
+            <div class="card_in_box card_in_box_exp" fxLayout="row" fxLayoutAlign="space-between none">
+            <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+              <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+              <div class="cont_inn_tx">
+                <h2>Warehousing</h2>
+                <p>15.2 Lacs</p>
+                <h4 >20,000 more then last month</h4>
+              </div>
+            </div>
+            </div>
+            <div class="card_in_box card_in_box_exp" fxLayout="row" fxLayoutAlign="space-between none">
+              <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                <div class="cont_inn_tx">
+                  <h2>Transportation</h2>
+                  <p>8.2 Lacs</p>
+                  <h4 >1Lac Less then last month</h4>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <div fxFlex="33">
+              <div fxFlex=""   class="dash_card" >
+                <div class="dash_card_tit">Outstanding Payments</div>
+                <div class="card_in_box" fxLayout="row" fxLayoutAlign="space-between none" > 
+                  <div class="card_dis after_right card_dis_out_pay"  fxLayout="column" fxLayoutAlign="space-between stretch" >
+                   
+                   <div class="cont_inn_tx">
+                     <h2>Outstanding Bill</h2>
+                     <p>23.4 Lacs</p>
+                     <h4><b>13 Lac</b> warehouse </h4>
+                     <h4> <b>10.4 Lac</b>  Transportation</h4>
+                     <i>! On February 12, 2023</i>
+                   </div>
+                   <div class="cont_foot_tx" fxLayout="column" fxLayoutAlign="space-between stretch" >
+                    
+                    <div class="creat_bt"  fxLayout="column" fxLayoutAlign="space-between stretch">
+                      <button mat-flat-button color="primary">Check Detailed Invoice</button>
+                      
+                  </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                </div>
+    </div>
+    <div style="width: 100%;">
+     <div fxFlex="60">
+        <div fxFlex=""   class="dash_card" >
+          <div class="dash_card_tit">Destination:</div>
+          <div class="card_in_box" fxLayout="column" fxLayoutAlign=" none" style="height: auto;" > 
+            <mat-tab-group fxLayout="column" fxLayoutAlign=" none">
+              <mat-tab >
+                <ng-template mat-tab-label>
+                  
+                  Central Warehouse
+                </ng-template>
+                <div class="example-small-box " fxLayout="row" fxLayoutAlign=" start" >
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Inventory</h2>
+                      <p>2,458</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Occupied Space</h2>
+                      <p>4,500Sq.Ft.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Unutilized Space</h2>
+                      <p>25%</p>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <div style="background-color: #EAEAEA;padding-top: 10px;">
+                  <canvas baseChart 
+    [chartType]="barChartType"
+    [legend]="barChartLegend"    
+    [labels]="barChartLabels"
+    [datasets]="barChartData"
+    [options]="barChartOptions" style="max-height:140px">    
+  </canvas>
+                </div>
+              </mat-tab>
+            
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  
+                  Regional Warehouse
+                </ng-template>
+                <div class="example-small-box mat-elevation-z4" fxLayout="row" fxLayoutAlign=" start" >
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Inventory</h2>
+                      <p>2,458</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Occupied Space</h2>
+                      <p>4,500Sq.Ft.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Unutilized Space</h2>
+                      <p>25%</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </mat-tab>
+            
+              <mat-tab>
+                <ng-template mat-tab-label>
+                  
+                  Destination:
+                </ng-template>
+            
+                <div class="example-small-box mat-elevation-z4" fxLayout="row" fxLayoutAlign=" start" >
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Inventory</h2>
+                      <p>2,458</p>
+                     
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Occupied Space</h2>
+                      <p>4,500Sq.Ft.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card_dis after_none card_dis_expenses"  fxLayout="column" fxLayoutAlign="center stretch">
+                    <div class="view_arrow"><img src="../../../assets/images/vuesax-bulk-export.png"></div>
+                    <div class="cont_inn_tx">
+                      <h2>Unutilized Space</h2>
+                      <p>25%</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+            
+          </div>
+          </div>
+          </div>
+          <div fxFlex="40">
+            <div fxFlex=""   class="dash_card" >
+              <div class="dash_card_tit">Transport</div>
+              <div class="card_in_box" fxLayout="column" fxLayoutAlign=" none" style="height: 280px;"  > 
+                <mat-tab-group fxLayout="column" fxLayoutAlign=" none">
+                  <mat-tab >
+                    <ng-template mat-tab-label>
+                      
+                      In transit
+                    </ng-template>
+                    <div style="padding-top: 25px;" class="example-small-box mat-elevation-z4" fxLayout="row" fxLayoutAlign=" start" >
+                      
+                      
+                      <canvas baseChart 
+                      [data]="doughnutChartData"
+                      [labels]="doughnutChartLabels"
+                      [chartType]="doughnutChartType"
+                      [colors]="colors"
+                      [options]="options"
+                      >
+                    </canvas>
+                    </div>
+                  </mat-tab>
+                
+                  <mat-tab>
+                    <ng-template mat-tab-label>
+                      
+                      Delivered
+                    </ng-template>
+                    <div class="example-small-box mat-elevation-z4" fxLayout="row" fxLayoutAlign=" start" >
+                      
+                     
+                      
+                    </div>
+                  </mat-tab>
+                
+                
+                </mat-tab-group>
+                
+              </div>
+              </div>
+              </div>
+    </div>
+
+  </div>
+  <div fxFlex="30">
+    <div fxFlex=""   class="dash_card " >
+      <div class="dash_card_tit">Warehousing and Transportation SLA’s</div>
+      <div class="card_in_box  card_in_box_wms" fxLayout="row" fxLayoutAlign="space-between none" > 
+        <div class="card_dis after_none after_right "  fxLayout="column" fxLayoutAlign=" none" >
+         
+         <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+           <div fxFlex="65" class="wms_lf_cont">
+            <p>Indent Vs Placement In %</p>
+           <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+           </div>
+           <div class="wms_ri_cont" fxFlex="30" fxLayout="row" fxLayoutAlign="end center">
+            <p>92% 2.5 </p>
+            <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+           </div>
+         </div>
+
+         <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxFlex="65" class="wms_lf_cont">
+           <p>IIndent Vs Placement In % </p>
+          <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+          </div>
+          <div class="wms_ri_cont" fxFlex="34" fxLayout="row" fxLayoutAlign="end center">
+           <p>92% 2.5 Min </p>
+           <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+          </div>
+        </div>
+
+        <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxFlex="65" class="wms_lf_cont">
+           <p>Indent Vs Placement In %  </p>
+          <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+          </div>
+          <div class="wms_ri_cont" fxFlex="34" fxLayout="row" fxLayoutAlign="end center">
+           <p>89% </p>
+           <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+          </div>
+        </div>
+         
+        <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxFlex="65" class="wms_lf_cont">
+           <p>Indent Vs Placement In %</p>
+          <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+          </div>
+          <div class="wms_ri_cont" fxFlex="30" fxLayout="row" fxLayoutAlign="end center">
+           <p>92% 2.5 </p>
+           <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+          </div>
+        </div>
+
+        <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+         <div fxFlex="65" class="wms_lf_cont">
+          <p>IIndent Vs Placement In % </p>
+         <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+         </div>
+         <div class="wms_ri_cont" fxFlex="34" fxLayout="row" fxLayoutAlign="end center">
+          <p>92% 2.5 Min </p>
+          <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+         </div>
+       </div>
+
+       <div class="cont_inn_tx" fxLayout="row" fxLayoutAlign="space-between center">
+         <div fxFlex="65" class="wms_lf_cont">
+          <p>Indent Vs Placement In %  </p>
+         <h4>Delivery Performance In % Avg. Vehicle Utilization In % Pod(Proof Of Delivery) %</h4> 
+         </div>
+         <div class="wms_ri_cont" fxFlex="34" fxLayout="row" fxLayoutAlign="end center">
+          <p>89% </p>
+          <h4 ><img  src="../../../assets/images/vuesax-bulk-export.png"></h4>
+         </div>
+       </div>
+        
+        </div>
+       </div>
+      </div>
+      </div>
+      <div fxFlex="50">
+        <div fxFlex=""   class="dash_card" >
+          <div class="dash_card_tit">Order Transportation Journey</div>
+          <div style=" border:1px solid #ccc;background-color:#fff;margin-top: 10px;height: 350px;"> </div>
+          </div>
+      </div>
+      <div fxFlex="50">
+        <div fxFlex=""   class="dash_card" >
+          <div class="dash_card_tit">Destination:</div>
+          <div style="  border:1px solid #ccc;background-color:#fff;background-color:#fff;margin-top: 10px;height: 350px;">
+            
+          </div>
+          </div>
+      </div>
+
+
+</div>
+<!-- end -->
+
+</div>

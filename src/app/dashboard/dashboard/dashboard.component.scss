@@ -1,0 +1,275 @@
+@import "../../../assets/scss/mixins";
+.discrip_wrip
+{
+    .discrip_titl
+    {
+        @include font-size(0.75);
+        @include font-weight(500);
+        opacity: 0.5;
+    }
+    .duscript_sub
+    {
+        @include font-size(1.2);
+        @include font-weight(700);
+        span{
+            @include font-size(0.70);
+            @include font-weight(500);
+            @include margin(0,0,0,7px);
+        }
+    }
+}
+.dashboard_wrop
+{
+    @include margin(5px,20px,10px,20px);
+}
+
+.exporting_icon
+{
+   
+    @include heightwidth(35px,initial);
+    @include margin(0,0,0,10px);
+    @include displaydiv(inherit);
+    cursor:  pointer;
+    img{
+        @include heightwidth(100%,initial);
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 0px;
+    box-shadow: none;
+  }
+  .mat-row:nth-child(even){
+    background-color: #fff;
+}
+        
+.mat-row:nth-child(odd){
+    background-color: #e4e4e4;
+}
+td.mat-cell
+{
+    border: none;
+}
+
+
+.table_wrap
+{
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.click_data
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_view_ds
+{
+    text-align: center;
+    cursor: pointer;
+    img{width: 80px;}
+    h3{font-weight: 400;}
+}
+
+
+.dash_card{
+    @include margin(10px,10px,10px,10px);
+    
+    .dash_card_tit{
+        color: #383F4C;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    .card_in_box{
+        border: 1px solid #dfdfdf;
+    background-color: #fff;
+    margin-top: 10px;
+    height: 180px;
+    border-radius: 6px;
+    &.card_in_box_wms{
+        height: 503px;
+        .card_dis{
+            .cont_inn_tx{
+                @include padding(0,0,10px,0);
+                @include margin(0,0,10px,0);
+                border-bottom: 1px solid #7070702b;
+                &:last-child{
+                    border: none;
+                }
+                .wms_lf_cont{
+                    p{
+                        @include font-size(0.8);
+                    }
+                    h4{
+                        @include font-size(0.65);
+                        font-style: italic;
+                    }
+                }
+                .wms_ri_cont
+                {
+                    p{
+                        @include font-size(0.82);
+                        @include text-align(right);
+                    }
+                    h4{
+                        img{
+                            @include heightwidth(1rem,auto);
+                            @include margin(0,0px,0,5px);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    &.card_in_box_exp{
+        height: 80px;
+        margin-top: 0px;
+    }
+        .card_dis{
+            @include position(relative);
+            @include padding(20px,20px,20px,20px);
+            @include heightwidth(100%,auto);
+            overflow: hidden;
+            &.after_right{
+                &::after{
+                    content: "";
+                    width: 270px;
+                    height: 262px;
+                    background-color: #eeececad;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 50%;
+                    left:auto;
+                    right: -141px;
+                    top: -48px;
+                }
+            }
+            &.after_none{
+                &::after{
+                    display: none;
+                }
+            }
+            &.card_dis_expenses{
+                .view_arrow{
+                    @include position(absolute,15px,15px,auto,auto);
+                    z-index: 2;
+                    cursor: pointer;
+                    img{
+                        @include heightwidth(1.1rem,auto)
+                    }
+                }
+            .cont_inn_tx
+            {
+                z-index: 1;
+               
+                h2{
+                    @include font-size();
+                    @include font-weight(light);
+                    @include margin(0,0,2px,0);
+                }
+                p{
+                    @include font-size(1.2);
+                    @include font-weight(bold);
+                    @include margin(0,0,0px,0);
+                }
+                h4{
+                    @include font-size(0.65);
+                    @include font-weight(light);
+                    @include margin(0,0,0px,0);
+                }
+                
+                
+            }
+            }
+            &.card_dis_out_pay{
+                .cont_inn_tx
+            {
+                z-index: 1;
+                h2{
+                    @include font-size(0.8);
+                    @include font-weight(light);
+                    @include margin(0,0,0px,0);
+                }
+                p{
+                    @include font-size(1);
+                    @include font-weight(bold);
+                    @include margin(0,0,7px,0);
+                }
+                h4{
+                    @include font-size(0.62);
+                    @include font-weight(light);
+                    @include margin(0,0,0px,0);
+                }
+                i{
+                    @include font-size(0.65);
+                    @include font-weight(semi-bold);
+                    @include margin(15px,0,0px,0);
+                    @include displaydiv(block);
+                }
+                
+                
+            }
+
+            }
+            
+            &::after{
+                content: "";
+                width: 270px;
+                height: 262px;
+                background-color: #eeececad;
+                position: absolute;
+                z-index: 0;
+                border-radius: 50%;
+                left: -123px;
+                top: -18px;
+                border-top-right-radius: 90px;
+            }
+            .count_num{
+                @include font-size(0.70);
+                @include text-align(right);
+                @include opacity(0.7);
+            }
+            .cont_inn_tx
+            {
+                z-index: 1;
+                h2{
+                    @include font-size(0.8);
+                    @include font-weight(light);
+                    @include margin(0,0,5px,0);
+                }
+                p{
+                    @include font-size(1);
+                    @include font-weight(bold);
+                    @include margin(0,0,5px,0);
+                }
+                h4{
+                    @include font-size(0.62);
+                    @include font-weight(light);
+                    @include margin(0,0,5px,0);
+                }
+                i{
+                    @include font-size(0.65);
+                    @include font-weight(semi-bold);
+                    @include margin(0,0,0px,0);
+                }
+            }
+            .cont_foot_tx{
+               cursor: pointer;
+               z-index: 1;
+                .view_cont{
+                    @include font-size(0.6);
+                    @include font-weight(light);
+                    @include text-align(right);
+                    img{
+                        @include margin(0,0,0,5px);
+                    }
+                }
+            }
+        }
+    }
+}

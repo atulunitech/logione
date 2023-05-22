@@ -1,0 +1,108 @@
+
+<img class="loin_log_img" src="../../../assets/images/logione_logo.png" style="    width: 145px;
+position: fixed;
+z-index: 9;
+left: 3%;
+top: 4%;">
+
+<div class="bg-100 login_warp"  fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="center none" fxFlex="100%" fxFlex.gt-sm="100%" style="background-color: #f2f4f5;" >
+
+    <!-- <div  fxLayout="column" fxFlex="55%" fxLayoutAlign="end"  fxHide.sm fxHide.xs>
+        <img class="login_img" src="../../../assets/images/login_screen.png">
+    </div> -->
+   <!--    <div  fxLayout="row" fxFlex="55%" fxLayoutAlign="end center"  fxHide.sm fxHide.xs>
+       <div style="width: 100%;
+       height: initial;
+       padding-top: 40px;
+       padding-right: 40px;
+       padding-bottom: 40px;
+       padding-left: 40px;
+       max-width: 489px;
+       background-color: #fff;">
+            <img src="../../../assets/images/login_img.png" style="width: 100%;">
+       </div> 
+    </div>-->
+    <div fxLayout="column" fxFlex="50%"  fxLayoutAlign="center center">
+    <div class=" login_box">
+        <div class="login_box_inn">
+            <img class="loin_log_img" src="../../../assets/images/login_gif.png">
+            <form  autocomplete="off"
+            autocomplete="false"
+            autocorrect="off"class="login_form">
+               <!--   <div class="text-50 log_titile">Login with your Credentials to access the warehouse</div>
+                
+               <div class="cust_input">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your email</mat-label>
+                        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                      </mat-form-field>
+                </div> -->
+                <div *ngIf="email_show" class="cust_input_search_mob" style="width: 70%;margin: 0 auto;">
+                    <mat-form-field color="primary"  appearance="fill" >
+                        <mat-label>Enter Mobile Number</mat-label>
+                        <input matInput placeholder="Enter Mobile Number"  autocomplete="off"
+                        autocomplete="false"
+                        autocorrect="off"  >
+                      </mat-form-field>
+                      <div style="position: absolute;
+                      width: 28px;
+                      height: auto;
+                      right: 20px;
+                      top: 0px;
+                      padding: 8px;
+                      display: flex;
+                      align-items: center;
+                      cursor: pointer;
+                      transform: rotate(180deg);" (click)="viewotp()">
+                        <img style="    width: 100%;" src="../../../assets/images/left_arrow.png">
+                      </div>
+                </div>
+                <div *ngIf="otp_show" class="otp_sect">
+                    
+                    <input type="text" maxlength="1" #tex1 (keyup)="move($event, '', tex1, tex2)">
+                    <input type="text" maxlength="1" #tex2 (keyup)="move($event, tex1, tex2, tex3)">
+                    <input type="text" maxlength="1" #tex3 (keyup)="move($event, tex2, tex3, tex4)">
+                    <input type="text" maxlength="1" #tex4 (keyup)="move($event, tex3, tex4, '')">
+                    <div> <img style="    width: 100%;" src="../../../assets/images/left_arrow.png"></div>
+                    <!-- <ngx-otp-input [config]="otpInputConfig" (otpChange)="handeOtpChange($event)" (fill)="handleFillEvent($event)">
+                    </ngx-otp-input> -->
+                </div>
+                <div style="position: absolute;
+                      width: 28px;
+                      height: auto;
+                      right: 20px;
+                      top: 0px;
+                      padding: 8px;
+                      display: flex;
+                      align-items: center;
+                      cursor: pointer;
+                      transform: rotate(180deg);" (click)="viewotp()">
+                        <img style="    width: 100%;" src="../../../assets/images/left_arrow.png">
+                      </div>
+                <div *ngIf="email_show" class="forg_pass_wrp" fxLayout="row" fxLayoutAlign="center center" >
+                <div >
+                    <div style="font-size: 0.8rem;color: #9FA8B2;">
+                        Don’t have an account? &nbsp;
+                    </div>
+                </div>
+                <div class="forgot_pass">
+                     Click Here.
+                </div>
+
+                </div>
+              <!--   <div class="cust_input singin_bt" fxLayout="column" fxLayoutAlign="center stretch" >
+                    <button mat-flat-button color="primary">Sigin in</button>
+                </div>
+                <div class="video_cont"  fxLayout="row" fxLayoutAlign="space-between center" >
+                    <div class="vid_text" fxFlex="65">How to use WMS, click here to watch the tutorial. </div>
+                    <div class="cust_input " fxFlex="35" fxLayout="row" fxLayoutAlign="end center" > 
+                        <button mat-flat-button color="primary"><img class="play_bt" src="../../../assets/images/play_bt.png"> Watch Now</button>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+
